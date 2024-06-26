@@ -1,0 +1,136 @@
+{
+    "code": 0,
+    "msg": "success",
+    "time": "1719387747",
+    "data": {
+        "outdoor": {
+            "temperature": {
+                "time": "1719387746",
+                "unit": "ºF",
+                "value": "62.1"
+            },
+            "feels_like": {
+                "time": "1719387746",
+                "unit": "ºF",
+                "value": "62.1"
+            },
+            "app_temp": {
+                "time": "1719387746",
+                "unit": "ºF",
+                "value": "63.5"
+            },
+            "dew_point": {
+                "time": "1719387746",
+                "unit": "ºF",
+                "value": "59.4"
+            },
+            "humidity": {
+                "time": "1719387746",
+                "unit": "%",
+                "value": "91"
+            }
+        },
+        "indoor": {
+            "temperature": {
+                "time": "1719387746",
+                "unit": "ºF",
+                "value": "65.7"
+            },
+            "humidity": {
+                "time": "1719387746",
+                "unit": "%",
+                "value": "64"
+            }
+        },
+        "solar_and_uvi": {
+            "solar": {
+                "time": "1719387746",
+                "unit": "W/m²",
+                "value": "21.5"
+            },
+            "uvi": {
+                "time": "1719387746",
+                "unit": "",
+                "value": "0"
+            }
+        },
+        "rainfall_piezo": {
+            "rain_rate": {
+                "time": "1719387746",
+                "unit": "in/hr",
+                "value": "0.00"
+            },
+            "daily": {
+                "time": "1719387746",
+                "unit": "in",
+                "value": "0.00"
+            },
+            "event": {
+                "time": "1719387746",
+                "unit": "in",
+                "value": "0.00"
+            },
+            "hourly": {
+                "time": "1719387746",
+                "unit": "in",
+                "value": "0.00"
+            },
+            "weekly": {
+                "time": "1719387746",
+                "unit": "in",
+                "value": "0.02"
+            },
+            "monthly": {
+                "time": "1719387746",
+                "unit": "in",
+                "value": "5.58"
+            },
+            "yearly": {
+                "time": "1719387746",
+                "unit": "in",
+                "value": "28.39"
+            }
+        },
+        "wind": {
+            "wind_speed": {
+                "time": "1719387746",
+                "unit": "mph",
+                "value": "2.9"
+            },
+            "wind_gust": {
+                "time": "1719387746",
+                "unit": "mph",
+                "value": "3.4"
+            },
+            "wind_direction": {
+                "time": "1719387746",
+                "unit": "º",
+                "value": "36"
+            }
+        },
+        "pressure": {
+            "relative": {
+                "time": "1719387746",
+                "unit": "inHg",
+                "value": "28.23"
+            },
+            "absolute": {
+                "time": "1719387746",
+                "unit": "inHg",
+                "value": "28.23"
+            }
+        },
+        "battery": {
+            "haptic_array_battery": {
+                "time": "1719387746",
+                "unit": "V",
+                "value": "2.72"
+            },
+            "haptic_array_capacitor": {
+                "time": "1719387746",
+                "unit": "V",
+                "value": "4.3"
+            }
+        }
+    }
+}
