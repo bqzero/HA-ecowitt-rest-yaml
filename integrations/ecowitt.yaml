@@ -13,59 +13,59 @@ sensor:
   - platform: template
     sensors:
       outdoortemp:
-        friendly_name: "WS Aussentemperatur"
+        friendly_name: "WS Outdoor Temperatur"
         unit_of_measurement: "°C"
         value_template: "{{ ( state_attr('sensor.weatherstation_json', 'data')['outdoor']['temperature']['value']|float - 32 ) * 5 / 9 }}"
       indoortemp:
-        friendly_name: "WS Innentemperatur"
+        friendly_name: "WS Indoor Temperatur"
         unit_of_measurement: "°C"
         value_template: "{{ ( state_attr('sensor.weatherstation_json', 'data')['indoor']['temperature']['value']|float - 32 ) * 5 / 9 }}"
       outdoorhumid:
-        friendly_name: "WS Aussenfeuchtigkeit"
+        friendly_name: "WS Outdoor Humidity"
         unit_of_measurement: "%"
         value_template: "{{ state_attr('sensor.weatherstation_json', 'data')['outdoor']['humidity']['value']|float }}"
       indoorhumid:
-        friendly_name: "WS Innenfeuchtigkeit"
+        friendly_name: "WS Indoor Humidity"
         unit_of_measurement: "%"
         value_template: "{{ state_attr('sensor.weatherstation_json', 'data')['indoor']['humidity']['value']|float }}"
       absolute_pressure:
-        friendly_name: "WS absoluter Luftdruck"
+        friendly_name: "WS absolute Pressure"
         unit_of_measurement: "hPa"
         value_template: "{{ ( state_attr('sensor.weatherstation_json', 'data')['pressure']['absolute']['value']|float ) * 33.863886666666710139995573111167 }}"
       rain_rate:
-        friendly_name: "WS aktuelle Regenrate"
+        friendly_name: "WS current Rain Rate"
         unit_of_measurement: "mm/h"
         value_template: "{{ ( state_attr('sensor.weatherstation_json', 'data')['rainfall_piezo']['rain_rate']['value']|float ) * 25.4}}"
       rain_rate_daily:
-        friendly_name: "WS Regenrate Tag"
+        friendly_name: "WS Rain Rate Daily"
         unit_of_measurement: "mm"
         value_template: "{{ ( state_attr('sensor.weatherstation_json', 'data')['rainfall_piezo']['daily']['value']|float ) * 25.4}}"
       rain_rate_weekly:
-        friendly_name: "WS Regenrate Woche"
+        friendly_name: "WS Rain Rate Weekly"
         unit_of_measurement: "mm"
         value_template: "{{ ( state_attr('sensor.weatherstation_json', 'data')['rainfall_piezo']['weekly']['value']|float ) * 25.4}}"
       rain_rate_monthly:
-        friendly_name: "WS Regenrate Monat"
+        friendly_name: "WS Rain Rate Monthly"
         unit_of_measurement: "mm"
         value_template: "{{ ( state_attr('sensor.weatherstation_json', 'data')['rainfall_piezo']['monthly']['value']|float ) * 25.4}}"
       rain_rate_yearly:
-        friendly_name: "WS Regenrate Jahr"
+        friendly_name: "WS Rain Rate Yearly"
         unit_of_measurement: "mm"
         value_template: "{{ ( state_attr('sensor.weatherstation_json', 'data')['rainfall_piezo']['yearly']['value']|float ) * 25.4}}"
       windspeed:
-        friendly_name: "WS Windgeschwindigkeit"
+        friendly_name: "WS Windspeed"
         unit_of_measurement: "km/h"
         value_template: "{{ ( state_attr('sensor.weatherstation_json', 'data')['wind']['wind_speed']['value']|float ) * 1.60934 }}"
       windgust:
-        friendly_name: "WS Windspitzengeschwindigkeit"
+        friendly_name: "WS Wind Gust"
         unit_of_measurement: "km/h"
         value_template: "{{ ( state_attr('sensor.weatherstation_json', 'data')['wind']['wind_gust']['value']|float ) * 1.60934 }}"
       winddirection:
-        friendly_name: "WS Windrichtung"
+        friendly_name: "WS Wind Direction"
         unit_of_measurement: "°"
         value_template: "{{ state_attr('sensor.weatherstation_json', 'data')['wind']['wind_direction']['value']|float }}"
       solarradiation:
-        friendly_name: "WS Sonnenstrahlung"
+        friendly_name: "WS Solar Radiation"
         unit_of_measurement: "W/m²"
         value_template: "{{ ( state_attr('sensor.weatherstation_json', 'data')['solar_and_uvi']['solar']['value'] ) }}"
       uvindex:
