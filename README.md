@@ -5,7 +5,7 @@ To use this yaml example you will have to create an application and API key on t
 
 Open https://www.ecowitt.net/home/user and go to your profil to create new keys. (see example folder for screenshots)
 
-once you have the two keys get the mac address of your EcoWitt Gateway.
+once you have the two keys get the mac address of your EcoWitt Gateway (GW2000).
 
 replace the placeholders in the yaml with the three values you just retrieved
 
